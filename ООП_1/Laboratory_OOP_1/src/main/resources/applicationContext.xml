@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+        <context:property-placeholder location="application.properties"/>
+
+        <bean id="myPet" class="laboratory_work.laboratory_oop_1.Dog"></bean>
+        <bean id="myCar" class="laboratory_work.laboratory_oop_1.Car"></bean>
+
+        <bean id="myEmployee" class="laboratory_work.laboratory_oop_1.Employee">
+                <property name="pet" ref="myPet"/>
+                <property name="car" ref="myCar"/>
+                <property name="name" value="${employee.name}"/>
+                <property name="age" value="${employee.age}"/>
+        </bean>
+</beans>
