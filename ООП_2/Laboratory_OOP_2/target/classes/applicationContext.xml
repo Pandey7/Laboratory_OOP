@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <context:property-placeholder location="application.properties"/>
+    <context:component-scan base-package="laboratory_work.laboratory_oop_2"/>
+
+
+<!--    <bean id="myPet"-->
+<!--          class="laboratory_work.laboratory_oop_2.Dog"-->
+<!--          init-method="init"-->
+<!--          destroy-method="destroy">-->
+
+<!--    </bean>-->
+
+<!--    <bean id="myVehicle"-->
+<!--          class="laboratory_work.laboratory_oop_2.Car"-->
+<!--          init-method="init"-->
+<!--          destroy-method="destroy">-->
+
+<!--    </bean>-->
+
+<!--    <bean id="myEmployee"-->
+<!--          class="laboratory_work.laboratory_oop_2.Employee"-->
+<!--          init-method="init"-->
+<!--          destroy-method="destroy">-->
+
+<!--        <constructor-arg name="pet" ref="myPet"/>-->
+<!--        <constructor-arg name="vehicle" ref="myVehicle"/>-->
+<!--        <property name="name" value="${employee.name}"/>-->
+<!--        <property name="age" value="${employee.age}"/>-->
+<!--    </bean>-->
+
+</beans>
